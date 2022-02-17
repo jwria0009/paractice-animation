@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #road1{
+        width:1300px;
+        height:100px;
+        position: relative;
+        top:100px;
+    }
+      #road2{
+        transform: rotate(90deg);
+        position: absolute;
+        left: 600px;
+        height: 180px;
+        top:230px;
+        z-index: -1;
+        
+    }
+    
+    #car1{
+        /* animation: car1Animation 4s linear 0s; */
+
+        width: 136px;
+        height: 59px;
+        position: absolute;
+        left: 21px;
+        top: 20px;
+        
+    }
+    /* div > img{
+        position: absolute;
+        width: 323x;
+        height: 33px;
+        top: 100px;
+        left: 900px;
+
+    } */
+    
+    .wheel1, .wheel2{
+        animation: Wheel-Rotator 2s linear 0s, Wheel-Rotator 4s linear 5s;
+        position: absolute;
+        width: 33px;
+        height: 33px;
+    }
+
+    .wheel2{
+        top:49px;
+        left:28px;
+        
+       
+    }
+    .wheel1{
+        top: 49px;
+        left: 112px;
+        
+    
+    
+    }
+    .toyota{
+        animation: car1Animation 4s linear 0s;
+        position: absolute;
+
+    }
+
+     @keyframes car1Animation{
+    
+        0%{
+            left:0;
+        }
+        50%{
+            left:55%;
+        }
+        70%{
+            left:55%;
+        }
+        100%{
+            left:90%;
+        }
+
+
+    }
+   @keyframes Wheel-Rotator{
+         0%{
+            transform: rotate(0deg);
+        }
+        /* 50%{ */
+            /* transform: rotate(360deg); */
+            
+        /* } */
+        /* 70%{ */
+            /* transform: rotate(0deg); */
+
+        /* } */
+        100%{
+            transform: rotate(360deg);
+
+        }
+   }
+
+       
+ 
+
+#car2{
+    width:100px ;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 71%;
+    transform: rotate(180deg);
+    animation:car2animation 1s ease-out 2s; 
+    /* animation-fill-mode:forwards; */
+
+    
+}
+  
+    
+
+@keyframes car2animation{
+    from{
+        top:0;
+    }
+    to{
+        top:80%;
+    }
+}
+
+
+</style>
+</head>
+<body>
+    
+    <img id="road1" src="E:\road.jpg" alt="">
+    <div class="toyota">
+        <img id="car1" src="C:\Users\NCS\Downloads\carre-removebg-preview.png" alt="">
+        <img  class="wheel1" src="C:\Users\NCS\Downloads\wheel-removebg-preview.png" alt="">
+        <img class="wheel2" src="wheel-removebg-preview.png" alt="">
+    </div>
+   
+    <img id="road2" src="E:\road.jpg" alt="">
+
+    <img id="car2"src="C:\Users\NCS\Downloads\imagecar-removebg-preview.png" alt="">
+
+    <!-- <div class="wheels"> -->
+       
+</div>
+</body>
+</head>

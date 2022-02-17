@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            /* background-color:black; */
+            border: 5px solid black;
+            height: 500px;
+            width: 500px;
+            border-radius:250px;
+            margin: auto;
+            position: relative;
+        }
+        .c1{
+          background-color:orange;
+          width:100px;
+          height: 100px;
+          position: absolute;
+          border-radius:100px;
+          margin: auto;
+          /* left:0; */
+          right:0;
+          top:0;
+          bottom:0;
+          animation:c1animation 4s ease-in-out ;
+          animation-iteration-count: infinite;
+     }
+          @keyframes c1animation{
+              0%{
+                  right: 0;
+              }
+              50%{
+                  right:80%;
+              }
+              100%{
+                  right:0;
+              }
+          }
+      .c2{
+          background-color: red;
+          width:100px;
+          height:100px;
+          position: absolute;
+          border-radius:100px;
+          margin: auto;
+          right:0;
+          left: 0;
+          top: 0;
+          animation: c2animation 4s ease-in-out;
+          animation-iteration-count: infinite;
+     }
+           @keyframes c2animation{
+             0%{
+                 top:0%;
+             }
+             50%{
+                 top: 80%;
+             }
+             100%{
+                top: 0%; 
+             }
+            
+    }
+
+     .m1{
+         height:20px;
+         width:20px;
+         background-color:blue;
+         position: absolute;
+         margin: auto;
+         border-radius: 20px;
+         top: 0;
+         right: 0;
+         left: 0;
+         animation: m1aniamtion 2s ease-in-out 0s;
+         transform-origin: 50px 100px;
+
+
+
+    }
+    @keyframes m1aniamtion{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform:rotate(360deg);
+        }
+
+    }
+
+    .m2{
+        height: 20px;
+        width:20px;
+        background-color:white;
+        position: absolute;
+        margin: auto;
+        border-radius: 20px;
+        top: 0;
+        right: 0;
+        left: 0;
+        animation:m2aniamtion 2s ease-in-out 0s;
+    }
+            
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+       <div class="c1"><div class="m1"></div>
+    </div>
+       <div class="c2"><div class="m2"></div>
+    </div>
+    </div>
+
+    
+</body>
+</html>

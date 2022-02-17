@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        nav{
+            height:45px;
+            display: flex;
+            position: relative;
+        }
+        .move{
+            position: absolute;
+            left:300px;
+            top: 10px;
+        }
+
+        #color{
+           background-color:blue ;
+            
+        }
+        #red{
+            background-color: red;
+        }
+         ol{
+            display: flex;
+            list-style-type:none;
+            justify-content: center;
+            flex-grow:2;
+        
+        }
+        li{
+            margin-left: 20px;
+        }
+        .lo{
+            position: absolute;
+            right: 77px;
+        }
+        .search{
+            position: absolute;
+            right:220px;
+            top: 14px;
+        }
+        .img{
+            position: absolute;
+            top: 6px;
+            left: 85%;
+        }
+     .header{
+    background-image: url(bg.jpg);
+    width: 100%;
+    min-height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+    .heading{
+    position: absolute;
+    left: 400px;
+    top:100px;
+    
+    
+}
+@font-face{
+    font-family: jiya;
+    src: url(RemachineScript_Personal_Use.ttf);
+}
+   .heading  h1 {
+     font-family: jiya;
+}
+   .button{
+    background-color: red;
+    width: 200px;
+    height: 30px;
+    color: white;
+    border: none;
+    margin: auto;
+    top:130px;
+    left:180px;
+    
+    
+}
+   .blue{
+    background-color: blue;
+    width: 150px;
+    height: 30px;
+    border: none;
+    margin-left: 40%;
+    position: absolute;
+    top: 105%;
+
+}
+   .jia{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+    margin-right: 50px;
+    
+    
+}
+   .jia div{
+    margin-left: 60px;
+}
+   .background{
+      background-color:hsl(240, 36%, 9%);
+      width:100%;
+      height:600px;
+}
+.head{
+ 
+    color: rgb(202, 34, 34);
+     padding-top: 56px;
+    padding-left: 129px;
+} 
+.box1{
+    background-color:lightgray;
+    border:10px solid white;
+    width:200px;
+    height:200px;
+    margin-left: 100px;
+
+}
+
+#boxes{
+    display: flex;
+    justify-content: center;
+    /* margin-left:20px; */
+    margin-top:70px;
+}
+.box1 img {
+    padding-left:73px;
+    padding-top:78px;
+}
+button{
+    background-color: rgb(66, 66, 214);
+    width:100px;
+    height:30px;
+    border: none;
+    margin-left:85%;
+    /* position: absolute; */
+    /* top:20px; */
+}
+
+.paragraph{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.paragraph div{
+    margin-left: 40px;
+}
+
+.paragraph div h4{
+    color: red;
+    margin-left: 120px;
+
+}
+.paragraph div p{
+    color: white;
+    margin-left: 100px;
+
+}
+#settings{
+  margin-left:180px ;
+  position: relative;
+}
+#setting{
+    margin-right:80px;
+    position: relative;
+}
+
+#set{
+    
+    position: relative;
+    right:50px;
+}
+.gul{
+    text-align:center;
+}
+.main-wala{
+    display: flex;
+    justify-content: center;
+}
+.main-wala div{
+        margin-left:30px;
+}
+.gul h1{
+    color:rgb(66, 183, 230);
+}
+.main-wala h3{
+         color:rgb(66, 183, 230);
+}
+.main-wala button{
+    background-color:rgb(65, 159, 196) ;
+    width:50px;
+    height: 30px;
+}
+.piture{
+    margin-top:30px;
+}
+.last{
+    text-align: center;
+}
+.test{
+    color:rgb(65, 159, 196);
+}
+.test1{
+    color: red;
+}
+.last-section{
+    background-color: rgb(8, 8, 37);
+    width:100%;
+    height:600px;
+    display: flex;
+    top: 50px;
+}
+.last-section div{
+    margin-left:80px;
+}
+
+
+
+
+.last-section p {
+    color: white;
+}
+.last-section p1{
+    color: blue;
+}
+.uff{
+    color:red;
+}
+.s2{
+    color: red;
+}
+.diba{
+    background-color: white;
+    height: 30px;
+    width:300px;
+    margin-top:20px;
+    /* margin: auto!important ; */
+    line-height: 20px;
+    
+}
+.lastb{
+    background-color: blue;
+    height:30px ;
+    width:80px;
+    position: absolute;
+    top: 230px;
+    right:20px;
+}
+
+
+#parent-btn{
+    position: relative;
+}
+.lastbox{
+    background-color: white;
+    width:50px;
+    height: 40px;
+}
+
+</style>
+</head>
+<body>
+    <nav>
+      
+        <div class="move">
+            <img class="lo"  src="E:\logo.png" alt=""> 
+            Your Logo
+        </div>
+        <ol>
+            <li id="color">Home</li>
+            <li>Portfolio</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li id="red">Blog</li>
+        </ol>
+        <img class="img" src="E:\search.png" alt="">
+        <div class="search">
+            search
+            
+        </div>
+    </nav>
+    <section class="header">
+        <div class="heading">
+        <h1 >GOOD DESIGN IS GOOD BUSINESS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt illo aperiam ipsam nam rerum veniam explicabo<br> pariatur magni ipsa soluta, voluptate numquam nulla odit suscipit quaerat laborum praesentium consequatur?</p>
+        <button class="button">
+            LEARN MORE
+        </button>
+
+</div>
+<button class="blue">OUR SERVICES
+</button>
+    </section>
+    
+    <div class="jia">
+        <div><img src="E:\pic1.png" alt="">
+            <h3>Web Design</h3>
+            <p>
+           Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.<br> Esse, dicta explicabo animi<br> optio in nostrum recusandae?  
+        </p></div> 
+        <div><img src="E:\pic2.png" alt=""><h3>Search Optimization </h3>
+            <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Sapiente nihil vero nam autem.<br> Totam quia earum eaque est <br>incidunt omnis vel nisi, amet<br> aspernatur enim praesen</p></div> 
+        <div><img src="E:\pic3.png" alt="">
+            <h3>Online Shop</h3>
+                <p>Lorem ipsum dolor, sit amet<br> consectetur adipisicing elit.<br> Atque, voluptate quia suscipijt<br> voluptates nihil saepe optio<br> aperiam consequatur asperiores.
+        </p>
+    </div> 
+        <div><img src="E:\pic4.png" alt="">
+            <h3>Socail Media</h3>
+            <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Quaerat accusantium quae, iusto<br> perferendis, consequatur ducimus,<br> distinctio molestiae expedita minima<br> nam suscipit. Nihil maiores fugit </p></div> 
+       
+    </div>
+    <div class="background">
+       <h1  class="head">Our Portfolio Awesome</h1>
+        
+        <div id="boxes">
+
+       
+        <div class="box1">
+            <img src="E:\cam.png" alt=""> 
+            
+    </div>
+        <div class="box1">
+            <img src="E:\cam.png" alt="">
+         </div>
+            <div class="box1">
+                 <img src="" alt="">
+            </div>
+    </div>
+    <div class="paragraph">
+        <div id="settings">
+            <h4>Lorem Ipsum Dolar Sit Amet </h4>
+            <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Magnam<br> cum quo  alias officiis! Nulla culpa  
+            </p>
+        </div>
+        <div id="setting">
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit
+            </p>
+        </div>
+        <div id="set">
+            <h4>Ipsum Amet Dolor Sit</h4>
+            <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Expedita  
+            </p>
+        </div>
+     </div>
+        <button>MORE Words</button>
+        </div>
+     <div class="gul">
+         
+              <h1>
+                 WHAT WE OFFER
+             </h1>
+             <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet pariatur inventore totam ad adipisci, optio tempora libero! Deleniti odio<br> voluptatum quam possimus tempora. Culpa autem veritatis soluta consequatur sequi natus. 
+             </p>
+             
+             </div>
+             
+             <div class="main-wala">
+             <div>
+               <h3>Web Design</h3>
+               <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Consequuntur non eius<br> mollitia adipisci atque cumque minima<br> quia unde eum temporibus vel excepturi <br>suscipit sit, pariatur, quidem optio enim </p>
+               <!-- <button>Details</button> -->
+             </div>
+             <div>
+                 <h3>Search Optimization</h3>
+                 <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Eligendi odit laudantium<br> perspiciatis ab architecto voluptates even <br>iet maiores ratione earum quaerat optio st<br> odio sed mollitia, itaque quam dolores  nob!</p>
+             </div>
+             <div>
+                  <h3>Online Shop</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur<br> adipisicing elit. Blanditiis perferendis a aut<br> fugiat quam eligendi voluptas quod dicta at<br> adipisci nemo, inventore similique. Unde q<br> saepe quam iure atque aut!</p>
+                  <!-- <button>Details</button> -->
+             </div>
+             <div>
+                 <h3>Socail Media</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Quos veniam officiis, qui<br> iste totam, accusamus eius temporis error <br> reiciend recusandae id sunt quisquam simi<br>lique est suscipit eligendi? Laudantium,<br> nobis?</p>
+             </div>
+             </div><hr>
+             <div class="last">
+                 <h1 class="test">TESTIMONIALS</h1>
+                 <P>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non neque sequi voluptates, dignissimos et ullam veritatis,<br> exceptur inatus ducimus harum architecto. Voluptates mollitia, animi obcaecati ullam soluta assumenda architecto".</P>
+                 <p1 class="test1">jawaria Ashraf</p1>
+                 <div class="piture">
+                 <img src="E:\capture1.png" alt="">
+                 <img src="E:\capture2.png" alt="">
+                 <img src="E:\capture3.png" alt="">
+                 </div>
+                 
+                </div>
+                <div>
+                <div class="last-section">
+                    <div >
+                    <h3 class="s2">BIRDS FEEDS</h3>
+                    <P>Check out this great theme item</P>
+                    <P1>http/item/@.com</P1>
+                    <p>2weeks ago</p>
+                    <hr>
+                    <P>Check out this great theme item</P>
+                    <P1>http/item/@.com</P1>
+                    <p>2weeks ago</p>
+                    <hr>
+                    <P>Check out this great theme item</P>
+                    <P1>http/item/@.com</P1>
+                    <p>2weeks ago</p>
+                    
+                </div>
+                <div id="parent-btn">
+                    <h3 class="s2">
+                        NEWSLETTER
+                    </h3>
+                <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Voluptatibus odit debitis <br>ipsa nisi, modi adipisci commodi voluptates  </p>
+                <hr>
+                <p1>youtube email Address</p1><br>
+                <!-- <div class="diba"></div> -->
+                <input placeholder="Write Some tect heare" class="diba" type="text">
+                <br>
+
+
+
+                <button class="lastb">Sign Up</button>
+                </div>
+                <div>
+                    <h3 class="s2" >RECENT PROJECTS
+                        </h3>
+                     <div class="lastbox"></div>
+                     <p>Security business Card</p>
+                        <p1>http...</p1>
+                        <p>2 weeks ago</p>
+                    
+                    <hr>
+                    
+                    <div class="lastbox"></div>
+                 <p>Security business Card</p>
+                    <p1>http...</p1>
+                    <p>2 weeks ago</p>
+                
+                <hr>
+                   <div class="lastbox"></div>
+             <p>Security business Card</p>
+                <p1>http...</p1>
+                <p>2 weeks ago</p>
+            
+         </div>
+         <div>
+         <h3 class="s2">
+                 CONTACT
+             </h3>
+             <div>
+             <img src="E:\p.png" alt="">
+             <a href="">1-000-000-0000<br>1-000-000-0000</a>
+             </div>
+             <div>
+             <img src="E:\capture p.png" alt="">
+             <a href="">1-000-000-0000<br>1-000-000-0000</a>
+             </div>
+             <div>
+             <img src="E:\capture t.png" alt="">
+             <p>jawaria Ansari<br>wonderful</p>
+              </div>
+        </div>
+            
+    </div>
+             
+               
+</body>
+</html>
