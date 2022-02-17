@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myparent{
+            
+            border: 1px solid red;
+            display: flex;
+            height: 300px;
+            justify-content:center;
+            width: fit-content;
+            width: 400px;
+            
+        }
+        .box{
+            background-color: blue;
+            height: 100px;
+            /* width: 100px; */
+            border:1px solid orange; 
+            flex-grow:5;
+            
+        }
+    
+        .box:nth-chiild(3){
+            flex-grow:1;
+        }
+        .main{
+            border:2px solid black;
+            width:600px;
+            height: 50px;
+        }
+        .heading{
+            /* display:inline-flex */
+            display: flex;
+             justify-content:center;
+             margin: 12px;
+             
+        }
+        .gul ul{
+            display:flex;
+            justify-content: space-between;
+            line-height:30px;
+            width:300px;
+            
+        }
+        nav{
+            /* nav tad is used for navigation bar. */
+         background-color: blue; 
+         border-radius: 20px;
+         height: 30px;
+         width: 400px;
+         
+
+        }
+        nav li{
+            list-style: none;
+
+        }
+        nav li a{
+            text-decoration: none;
+            color: blue;
+            background-color: aliceblue;
+        }
+        nav li a:hover{
+            
+            color: black;
+        }
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="myparent">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    </div><br>
+   <nav class="gul">
+       
+           <ul>
+           <li><a href="">HOME</a></li>
+           <li><a href="">ABOUT</a></li>
+           <li><a href="">WORK</a></li>
+           <li><a href="">CLIENT</a></li>
+           <li><a href="">CONTACT</a></li>
+       </ul>
+    
+   </nav>
+</body>
+</html>
